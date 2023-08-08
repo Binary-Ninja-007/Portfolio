@@ -13,7 +13,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument,CgDollar,chatgpt} from "react-icons/cg";
+import { CgFileDocument,CgDollar} from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);

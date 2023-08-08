@@ -752,4 +752,6 @@ button:focus {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: center;
+  flex-grow: 1;
 }
