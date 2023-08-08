@@ -13,7 +13,7 @@ import {
   AiOutlineUser,
 } from "react-icons/ai";
 
-import { CgFileDocument } from "react-icons/cg";
+import { CgFileDocument,CgDollar,chatgpt} from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -88,6 +88,25 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
               >
                 <CgFileDocument style={{ marginBottom: "2px" }} /> Resume
+              </Nav.Link>
+            </Nav.Item>
+
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/CurrencyPage"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgDollar style={{ marginBottom: "2px" }} /> Currency
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link
+                as={Link}
+                to="/AIchatroom"
+                onClick={() => updateExpanded(false)}
+              >
+                <CgDollar style={{ marginBottom: "2px" }} /> ChatGPT
               </Nav.Link>
             </Nav.Item>
 
