@@ -18,6 +18,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import CurrencyPage from './components/Currency/CurrencyPage'
+import Map from './components/Map/Mappage'
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -43,6 +44,7 @@ function App() {
           <Route path="/resume" element={<Resume />} />
           <Route path="/CurrencyPage" element={<CurrencyPage/>}/>
           <Route path="/AIchatroom" element={<AIchatroom/>}/>
+          <Route path="/MapPage" element={<Map/>}/>
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
