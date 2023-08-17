@@ -12,6 +12,7 @@ import {
   DiRuby
 } from "react-icons/di";
 import {
+  SiTypescript,
   SiRedis,
   SiFirebase,
   SiNextdotjs,
@@ -25,7 +26,6 @@ import {
   BiLogoWordpress,
   BiLogoUnity
 } from "react-icons/bi"
-import { TbBrandGolang } from "react-icons/tb";
 
 function Techstack() {
   return (
@@ -40,7 +40,7 @@ function Techstack() {
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
+         <SiTypescript/>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />

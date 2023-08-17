@@ -24,6 +24,8 @@ function CurrencyPage() {
     // })
 
     
+
+    
     return (
         <section>
             <Container fluid className="current-page-section">
@@ -40,43 +42,43 @@ function CurrencyPage() {
                     </InputGroup>
                 </Container>
                 <Container className='card-section'>
-            <Card style={{ width: '18rem', margin:"20px"}}>
-                <Card.Body>
-                    <Card.Title>USD</Card.Title>
-                        <Card.Text style={{fontSize:"50px",fontFamily:"arial"}}>
-                        {info.usd? price * info.usd.toPrecision(4): "___"}
+            <Card className='currencycard' id='usdcard'>
+                <Card.Body className='cardbody'>
+                    <Card.Title className='cardtitle'>USD</Card.Title>
+                        <Card.Text className="cardtext">
+                        {info.usd ? (price * info.usd).toPrecision(3): "___"}
                         </Card.Text>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem', margin:"20px"}}>
-                <Card.Body>
-                    <Card.Title>EURO</Card.Title>
-                        <Card.Text style={{fontSize:"50px",fontFamily:"arial"}}>
-                        {info.eur ? price * info.eur.toPrecision(4): "___"}
+            <Card className='currencycard' id='eurocard'>
+                <Card.Body className='cardbody'>
+                    <Card.Title className='cardtitle'>EURO</Card.Title>
+                        <Card.Text className="cardtext">
+                        {info.eur ? (price * info.eur).toPrecision(3): "___"}
                         </Card.Text>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem', margin:"20px"}}>
-                <Card.Body>
-                    <Card.Title>BITCOIN</Card.Title>
-                        <Card.Text style={{fontSize:"50px",fontFamily:"arial"}}>
-                        {info.usdt ? price * info.usdt.toPrecision(4): "___"}
+            <Card className='currencycard' id='usdtcard'>
+                <Card.Body className='cardbody'>
+                    <Card.Title className='cardtitle'>USDT</Card.Title>
+                        <Card.Text className="cardtext">
+                        {info.usdt ? (price * info.usdt).toPrecision(3): "___"}
                         </Card.Text>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem', margin:"20px"}}>
-                <Card.Body>
-                    <Card.Title>FLOW COIN</Card.Title>
-                        <Card.Text style={{fontSize:"50px",fontFamily:"arial"}}>
-                        {info.flow ? price * info.flow.toPrecision(4): "___"}
+            <Card className='currencycard' id='flowcoincard'>
+                <Card.Body className='cardbody'>
+                    <Card.Title className='cardtitle'>FLOW COIN</Card.Title>
+                        <Card.Text className="cardtext">
+                        {info.flow ? (price * info.flow).toPrecision(3): "___"}
                         </Card.Text>
                 </Card.Body>
             </Card>
-            <Card style={{ width: '18rem', margin:"20px"}}>
-                <Card.Body>
-                    <Card.Title>YUAN</Card.Title>
-                        <Card.Text style={{fontSize:"50px",fontFamily:"arial"}}>
-                        {info.gtq ? price * info.gtq.toPrecision(4): "___" }
+            <Card className='currencycard' id='gtq'>
+                <Card.Body className='cardbody'>
+                    <Card.Title className='cardtitle'>YUAN</Card.Title>
+                        <Card.Text  className="cardtext">
+                        {info.gtq ? (price * info.gtq).toPrecision(3): "___" }
                         </Card.Text>
                 </Card.Body>
             </Card>

@@ -755,3 +755,39 @@ button:focus {
   justify-content: center;
   flex-grow: 1;
 }
+.currencycard{
+   width: 18rem;
+    margin: 20px;
+    border-radius: 5px;
+}
+.cardbody {
+  background-color: rgba(0, 0, 0, 0.9);
+  margin: 0;
+
+}
+.cardtitle {
+  color: white;
+}
+.cardtext {
+  font-size: 50px;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 10px;
+
+}
+#usdcard {
+  background-image: url(../Images/USD.jpg);
+  
+}
+#eurocard {
+  background-image: url(../Images/Euro.jpg);
+}
+#usdtcard {
+  background-image: url(../Images/USDT.png);
+}
+#flowcoincard {
+  background-image: url(../Images/flowcoin.png);
+}
+#gtq {
+  background-image: url(../Images/yuan.jpg);
+}
