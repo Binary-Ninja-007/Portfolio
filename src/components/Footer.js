@@ -11,7 +11,7 @@ import { FaTelegram } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
-  let year = date.getFullYear() - 2;
+  let year = date.getFullYear();
   return (
     <Container fluid className="footer">
       <Row>

@@ -26,9 +26,9 @@ const MapChart = () => {
   }, []);
 
   return (
-    <Container id="current-page-section">
-    <div>The World Map</div>
-    <ComposableMap
+    <Container id="currentmap">
+    <h1 style={{color:"white", marginTop: "30px"}}>The World Map</h1>
+    <ComposableMap id="map"
       projectionConfig={{
         rotate: [-10, 0, 0],
         scale: 147

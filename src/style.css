@@ -761,7 +761,7 @@ button:focus {
     border-radius: 5px;
 }
 .cardbody {
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.7);
   margin: 0;
 
 }
@@ -790,4 +790,14 @@ button:focus {
 }
 #gtq {
   background-image: url(../Images/yuan.jpg);
+}
+#currentmap {
+  margin-top: 100px;
+  display:flex;
+  flex-direction: column;
+}
+#map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
