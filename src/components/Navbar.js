@@ -112,9 +112,9 @@ function NavBar() {
             </Nav.Item>
             <Nav.Item>
               <Nav.Link
-                href="/MapPage"
-                target="_blank"
-                rel="noreferrer"
+                as={Link}
+                to="/MapPage"
+                onClick={() => updateExpanded(false)}
               >
                 <SiMapbox style={{ marginBottom: "2px" }} /> Map
               </Nav.Link>

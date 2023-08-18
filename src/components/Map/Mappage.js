@@ -1,21 +1,60 @@
-import React from "react";
-import Particle from '../Particle'
-import Typewriter from "typewriter-effect";
+import React, { useEffect, useState } from "react";
+import { csv } from "d3-fetch";
+import { scaleLinear } from "d3-scale";
+import {
+  ComposableMap,
+  Geographies,
+  Geography,
+  Sphere,
+  Graticule
+} from "react-simple-maps";
 import { Container } from "react-bootstrap";
-function Map () {
-    return(
-        <Container fluid className="current-page-section">
-        <Typewriter
-            option={{
-                strings:["This page is in Developing mode!"],
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 50
-            }}/>
-        
-        <Particle/>
-        </Container>
-    )
 
-}
-export default Map;
+const geoUrl = "/features.json";
+
+const colorScale = scaleLinear()
+  .domain([0.29, 0.68])
+  .range(["#ffedea", "#ff5233"]);
+
+const MapChart = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    csv(`/vulnerability.csv`).then((data) => {
+      setData(data);
+    });
+  }, []);
+
+  return (
+    <Container id="current-page-section">
+    <div>The World Map</div>
+    <ComposableMap
+      projectionConfig={{
+        rotate: [-10, 0, 0],
+        scale: 147
+      }}
+    >
+      <Sphere stroke="#E4E5E6" strokeWidth={0.5} />
+      <Graticule stroke="#E4E5E6" strokeWidth={0.5} />
+      {data.length > 0 && (
+        <Geographies geography={geoUrl}>
+          {({ geographies }) =>
+            geographies.map((geo) => {
+              const d = data.find((s) => s.ISO3 === geo.id);
+              return (
+                <Geography
+                  key={geo.rsmKey}
+                  geography={geo}
+                  fill={d ? colorScale(d["2017"]) : "#F5F4F6"}
+                />
+              );
+            })
+          }
+        </Geographies>
+      )}
+    </ComposableMap>
+    </Container>
+  );
+};
+
+export default MapChart;
