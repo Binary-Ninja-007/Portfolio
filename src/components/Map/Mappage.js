@@ -27,7 +27,7 @@ const MapChart = () => {
 
   return (
     <Container id="currentmap">
-    <h1 style={{color:"white", marginTop: "30px"}}>The World Map</h1>
+    <h1 style={{color:"white", marginTop: "30px"}}>The World Map(CO2 Emission)</h1>
     <ComposableMap id="map"
       projectionConfig={{
         rotate: [-10, 0, 0],
