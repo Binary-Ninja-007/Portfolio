@@ -3,7 +3,6 @@ import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
 import pdf from "../../Assets/resume.pdf";
-import pdf1 from "../../Assets/ForHenry.pdf"
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
@@ -29,17 +28,6 @@ function ResumeNew() {
           >
             <AiOutlineDownload />
             &nbsp;Download CV
-          </Button>
-        </Row>
-        <Row style={{ justifyContent: "center", position: "relative" }}>
-          <Button
-            variant="primary"
-            href={pdf1}
-            target="_blank"
-            style={{ maxWidth: "250px"}}
-          >
-            <AiOutlineDownload />
-            &nbsp;ForHenry
           </Button>
         </Row>
 
