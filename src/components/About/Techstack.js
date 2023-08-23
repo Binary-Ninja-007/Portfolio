@@ -1,6 +1,7 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
+import {TbBrandReactNative} from "react-icons/tb";
 import {
   DiJavascript1,
   DiReact,
@@ -21,6 +22,10 @@ import {
   SiCsharp
 } from "react-icons/si";
 import {
+  GiBubbles
+} from "react-icons/gi";
+import {
+  BiLogoFlutter,
   BiLogoVuejs,
   BiLogoAngular,
   BiLogoWordpress,
@@ -58,6 +63,15 @@ function Techstack() {
         <BiLogoWordpress />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
+        <GiBubbles />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <BiLogoFlutter />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <TbBrandReactNative />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
         <BiLogoUnity />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
@@ -75,9 +89,7 @@ function Techstack() {
       <Col xs={4} md={2} className="tech-icons">
         <SiFirebase />
       </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
-      </Col>
+      
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col>
