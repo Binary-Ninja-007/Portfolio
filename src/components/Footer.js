@@ -16,7 +16,7 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3>Designed and Developed by Jack London</h3>
+          <h3>Designed and Developed by Binary Ninja</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} Jack </h3>
@@ -25,7 +25,7 @@ function Footer() {
           <ul className="footer-icons">
             <li className="social-icons">
               <a
-                href="https://github.com/Jacks-London"
+                href="https://github.com/Binary-Ninja-007"
                 style={{ color: "white" }}
                 target="_blank" 
                 rel="noopener noreferrer"

@@ -1,6 +1,6 @@
 <h2 align="center">
   Portfolio Website - v3.0<br/>
-  <a href="https://jacks-site.onrender.com" target="_blank">Jack London.tech</a>
+  <a href="https://jacks-site.onrender.com" target="_blank">Binary Ninja.tech</a>
 </h2>
 <div align="center">
   <img alt="Demo" src="./Images/readme-img1.png" />
@@ -19,7 +19,7 @@
 
 ## TL;DR
 
-You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [JackLondon](https://github.com/Jacks-London/Portfolio). Thanks!
+You can fork this repo to modify and make changes of your own. Please give me proper credit by linking back to [JackLondon](https://github.com/Binary-Ninja-007/Portfolio). Thanks!
 
 ## Built With
 
