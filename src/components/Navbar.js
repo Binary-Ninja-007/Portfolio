@@ -11,6 +11,7 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
+import { TbBrandThreejs } from "react-icons/tb";
 import { RiOpenaiFill } from "react-icons/ri";
 import { CgFileDocument,CgDollar} from "react-icons/cg";
 import { SiMapbox } from "react-icons/si";
@@ -52,6 +53,15 @@ function NavBar() {
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
+          <Nav.Item>
+              <Nav.Link
+                href="https://binaryninja.onrender.com/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <TbBrandThreejs style={{ marginBottom: "2px" }} /> Three.js Portfolio
+              </Nav.Link>
+            </Nav.Item>
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
                 <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
